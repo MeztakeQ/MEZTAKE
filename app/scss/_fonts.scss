@@ -1,0 +1,44 @@
+// На заголовок
+
+@font-face {
+    font-family: "Xolonium-Bold";
+    src: url("../fonts/Xolonium-Bold.woff2") format("woff2"),
+        url("../fonts/Xolonium-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Xolonium";
+    src: url("../fonts/Xolonium.woff2") format("woff2"),
+        url("../fonts/Xolonium.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+// На текст
+
+@font-face {
+    font-family: "AkzidGrtskNext-Light";
+    src: url("../fonts/AkzidGrtskNext-Light.woff2") format("woff2"),
+        url("../fonts/AkzidGrtskNext-Light.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "AkzidGrtskNext-Med";
+    src: url("../fonts/AkzidGrtskNext-Med.woff2") format("woff2"),
+        url("../fonts/AkzidGrtskNext-Med.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "AkzidGrtskNext-Regular";
+    src: url("../fonts/AkzidGrtskNext-Regular.woff2") format("woff2"),
+        url("../fonts/AkzidGrtskNext-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}

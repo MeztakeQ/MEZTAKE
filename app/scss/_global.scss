@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #070615;
+    font-family: "AkzidGrtskNext-Regular", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+ 
+h6,
+h5,
+h4,
+h3,
+h2,
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+menu{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1410px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.cursor {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .outer {
+    border: 1px solid #fff;
+  }
+  
+  .inner {
+    background: #fff;
+    height: 8px;
+    width: 8px;
+    transition: 250ms ease-out;
+  }
+  
+  .cursor.hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: transform 250ms ease-in-out;
+    background: #fff;
+  }
+  
+  .inner.hover {
+    background: #fff;
+    
+  }
+
+
+
+.runline{
+    position: relative;
+}
+
+
+  .marquee-infinite {
+    align-items: center;
+    max-width: 100%;
+    border-top: 1px solid #ffff;
+    border-bottom: 1px solid #ffff;
+    overflow: hidden;
+   
+}
+
+/*Здесь можно поиграть со свойством width: mac-content*/
+.marquee-infinite div {
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 10s linear infinite;
+  
+   
+}
+
+.marquee-infinite p {
+    white-space: nowrap;
+    width: 100%;
+    font-family: 'AkzidGrtskNext-Light', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    align-items: center;
+   
+}
+
+
+.marquee-infinite:hover div {
+    animation-play-state: paused;
+}
+
+
+@keyframes marquee-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ks-cboxtags{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+ul.ks-cboxtags {
+    list-style: none;
+    
+}
+ul.ks-cboxtags li{
+  display: inline;
+  
+}
+ul.ks-cboxtags li label{
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(248, 217, 56, 0.07);
+    color: #adadad;
+    white-space: nowrap;
+    margin: 10px 0px;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li label {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+    border: 1px solid #38F8AC;
+    color: #38F8AC;
+    transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+  
+  
