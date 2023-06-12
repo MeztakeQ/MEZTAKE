@@ -11,6 +11,14 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loader__title">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="loader__item loader__item-1"></div>
+        <div class="loader__item loader__item-2"></div>
+        <div class="loader__item loader__item-3"></div>
+    </div>
 
     <header class="header">
         <div class="container">
@@ -80,9 +88,10 @@
                     </h1>
                 </div>
                 <div class="aboutme__picture">
-                    
-                    <video class="aboutme__picture-img" autoplay="autoplay" controls  height="200px"src="images/home/video.mp4">
-                        <source src="images/home/video.mp4" />
+
+                    <video class="aboutme__picture-img" autoplay="autoplay" src="images/home/video.mp4" type="video/mp4"
+                        autoplay loop muted>
+                        <source autoplay="autoplay" src="images/home/video.mp4" />
                     </video>
                 </div>
                 <div class="aboutme__info">
@@ -94,7 +103,7 @@
                         творчества и знаний в веб-сайты является моей страстьюуже более четырех лет.
                     </p>
                     <p class="aboutme__info-text">
-                        даленно сотрудничаю с агентствами, консультирую стартапы и создаю с талантливыми людьми
+                        Удаленно сотрудничаю с агентствами, консультирую стартапы и создаю с талантливыми людьми
                         продукты как для бизнеса, так и для пользователей. Я создаю успешные адаптивные веб-сайты,
                         которые быстры, просты в использовании и построены с учетом лучших практик. Я всегда стремлюсь
                         узнать о новейших технологиях и фреймворках.</p>
@@ -368,7 +377,7 @@
         </div>
     </section>
 
-    <section claass="blog">
+    <section claass="blogs">
         <div class="container">
             <div class="blog__inner">
                 <div class="blog__top">
@@ -535,18 +544,10 @@
                             <li class="nav__list-item "><a class="nav__list-link link" href="#">контакты</a></li>
                         </ul>
                     </nav>
-                </menu> 
+                </menu>
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
 
 
     <div class="mouse">
@@ -556,6 +557,8 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="js/main.min.js"></script>
 
     <script>
@@ -569,8 +572,9 @@
     </script>
 
 
-
-
+<script>
+    
+</script>
 
 </body>
 
