@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <div class="loader">
+    <!-- <div class="loader">
         <div class="loader__title">
             <img src="images/logo.png" alt="">
         </div>
         <div class="loader__item loader__item-1"></div>
         <div class="loader__item loader__item-2"></div>
         <div class="loader__item loader__item-3"></div>
-    </div>
+    </div> -->
 
     <header class="header">
         <div class="container">
@@ -116,7 +116,25 @@
         <div class="container">
             <div class="skills__inner">
                 <div class="skills__items">
-
+                    <div class="skills__item">
+                        <div class="skills__header">
+                            <h4 class="skills__header-title">Инструменты</h4>
+                        </div>
+                        <div class="skills__info">
+                            <ul class="skills__list">
+                                <li class="skills__list-item">VSCode</li>
+                                <li class="skills__list-item">Linux</li>
+                                <li class="skills__list-item">Windows</li>
+                                <li class="skills__list-item">Figma</li>
+                                <li class="skills__list-item">Git</li>
+                                <li class="skills__list-item">Font Awesome </li>
+                                <li class="skills__list-item">Google Fonts</li>
+                                <li class="skills__list-item">PostgreSQL</li>
+                                <li class="skills__list-item">MySql </li>
+                                <li class="skills__list-item">SQLite</li>
+                            </ul>
+                        </div>
+                    </div>
 
 
                     <div class="skills__item">
@@ -244,7 +262,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <!-- <section class="services">
         <div class="container">
             <div class="services__inner">
                 <h1 class="services__inner-title">Услуги</h1>
@@ -375,6 +393,223 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="services">
+        <div class="container">
+            <div class="services__inner">
+                <div class="services__top">
+                    <h1 class="services__inner-title">Услуги</h1>
+                </div>
+                <div class="services__content">
+                    <div class="services__tab">
+                        <button class="tablinks active link" onclick="openCity(event, 'web-design')">Веб-дизайн</button>
+                        <button class="tablinks link" onclick="openCity(event, 'web-develop')">Веб-разработка</button>
+                        <button class="tablinks link" onclick="openCity(event, 'parsing')">Парсинг сайтов</button>
+                        <button class="tablinks link" onclick="openCity(event, 'avtomatiation')">Автоматизация
+                            отчетов</button>
+                        <button class="tablinks link" onclick="openCity(event, 'testing')">Тестирование</button>
+                        <button class="tablinks link" onclick="openCity(event, 'security')">Защита и лечение сайта</button>
+                        <button class="tablinks link" onclick="openCity(event, 'setting')">Настройка сайта</button>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="web-design" class="services__item tabcontent tabcontent-active">
+                        <div class="services__top">
+                            <h3 class="services__top-title">
+                                ВЕБ-ДИЗАЙН
+                            </h3>
+                        </div>
+
+                        <div class="services__info">
+                            <p class="services__info-text">
+                                Моя работа очень сильно сможет привлечь тебя, а именно я выполню работу любой
+                                сложности и в любых стилях, могу предложить его сам, но так же вы сами сможете мне
+                                предложить в каком делать, а далее я вас проконсультирую.
+                            </p>
+                            <p class="services__info-text">
+                                Создам по вашему техническому заданию современный, стильный, а главное, работающий
+                                дизайн Лендинга или Сайта.
+                            </p>
+                            <p class="services__info-text">
+                                По окончанию работы вы получите макет страницы сайта в figma с сеткой готовый для
+                                верстки. Используемые шрифты также будут указаны.
+                            </p>
+                        </div>
+
+                        <div class="services__bottom">
+                            <a class="services__bottom-btn link" href="#">Обратиться</a>
+                        </div>
+
+
+                    </div>
+
+                    <div id="web-develop" class="tabcontent">
+                        <div class="services__top">
+                            <h3 class="services__top-title">
+                                ВЕБ-РАЗРАБОТКА
+                            </h3>
+                        </div>
+
+                        <div class="services__info">
+                            <p class="services__info-text">
+                                Специализируюсь на адаптивной верстке по макету Figma или примеру, и моя цель
+                                - обеспечить ваш веб-сайт или приложение высококачественной и отзывчивой версткой.
+                            </p>
+                            <p class="services__info-text">
+                                Я уверен в своей способности создавать адаптивные веб-страницы, используя современные
+                                языки разметки, такие как HTML и CSS, а также фреймворки, такие как Bootstrap. Я уделяю
+                                особое внимание деталям и работаю в тесном сотрудничестве с вами, чтобы понять ваши
+                                требования и ожидания.
+                            </p>
+                            <p class="services__info-text">
+                                Мой подход к адаптивной верстке основан на оптимизации производительности и удобстве
+                                использования. Я создаю гибкие и масштабируемые интерфейсы, которые легко подстраиваются
+                                под разные разрешения экранов, обеспечивая приятный и современный пользовательский опыт.
+                            </p>
+                        </div>
+
+                        <div class="services__bottom">
+                            <a class="services__bottom-btn link" href="#">Обратиться</a>
+                        </div>
+                    </div>
+
+                    <div id="parsing" class="tabcontent">
+                        <div class="services__top">
+                            <h3 class="services__top-title">
+                                ПАРСИНГ САЙТОВ
+                            </h3>
+                        </div>
+
+                        <div class="services__info">
+                            <p class="services__info-text">
+                                Написание парсеров любой сложности.
+                            </p>
+                            <p class="services__info-text">
+                                Заказ выполняется согласно техническому заданию, за период тестирования будут исправлены
+                                все неучтенные ошибки, а также возникшие из-за изменения на сайте.
+                            </p>
+                            <p class="services__info-text">
+                                Скорость работы скрипта становится
+                                ясной после выполнения самого скрипта, работа через браузер всегда медленнее чем через
+                                запросы. На руки получаете две копии скрипта с неограниченной лицензией.
+                            </p>
+                            <p class="services__info-text">
+                                Что касается исходников, это тоже
+                                обсуждается отдельно. Пожелания не вошедшие в Т. З. и поддержка выполняются через новое
+                                задание. В основном работаю с python, но возможны и другие варианты.
+                            </p>
+                        </div>
+
+                        <div class="services__bottom">
+                            <a class="services__bottom-btn link" href="#">Обратиться</a>
+                        </div>
+                    </div>
+
+                    <div id="avtomatiation" class="tabcontent">
+                        <div class="services__top">
+                            <h3 class="services__top-title">
+                                АВТОМАТИЗАЦИЯ ОТЧЕТОВ
+                            </h3>
+                        </div>
+
+                        <div class="services__info">
+                            <p class="services__info-text">
+                                Разработка комплекса программных средств, позволяющих контролировать систему
+                                показателей, характеризующих итоги деятельности предприятия, организации, учреждения.
+                            </p>
+                        </div>
+
+                        <div class="services__bottom">
+                            <a class="services__bottom-btn link" href="#">Обратиться</a>
+                        </div>
+                    </div>
+                    <div id="testing" class="tabcontent">
+                        <div class="services__top">
+                            <h3 class="services__top-title">
+                                ТЕСТИРОВАНИЕ
+                            </h3>
+                        </div>
+
+                        <div class="services__info">
+                            <p class="services__info-text">
+                                Выполню ручное тестирование на проникновение по методике OWASP/WASC одного сайта, веб
+                                приложения или API сервиса. Возможно это всё объединить в один проект. Тестирование
+                                выполняется в роли черного (Black Box) и серого (Gray Box) ящика. Для возможности
+                                выполнения пентестинга по модели серого ящика, требуется предоставление тестовых данных
+                                в случае если самостоятельная регистрация невозможна.
+                            </p>
+                        </div>
+
+                        <div class="services__bottom">
+                            <a class="services__bottom-btn link" href="#">Обратиться</a>
+                        </div>
+                    </div>
+                    <div id="security" class="tabcontent">
+                        <div class="services__top">
+                            <h3 class="services__top-title">
+                                ЗАЩИТА И ЛЕЧЕНИЕ САЙТА
+                            </h3>
+                        </div>
+
+                        <div class="services__info">
+                            <p class="services__info-text">
+                                Нахожу и лечу вирусы на сайтах CMS Opencart. Удаляю вирусы, хакерские шеллы, бэкдоры и
+                                другой вредоносный код на вашем сайте.
+                            </p>
+                            <p class="services__info-text">
+                                После лечения вашего сайта на CMS Opencart я предоставляю гарантию на 1 месяц, то есть
+                                если ваш сайт повторно заразиться в течение месяца со дня заказа то вирусы я уже удаляю
+                                бесплатно.
+                            </p>
+                            <p class="services__info-text">
+                                Проверяю сайты на базе WordPress на наличие вирусов, вредоносного кода, инжекторов,
+                                редиректов и т. д.
+                            </p>
+
+                            <p class="services__info-text">
+                                Удаляю вредоносные коды, зараженные файлы, редиректы. После очистки сайта рекомендую
+                                провести меры по защите сайта от повторного заражения.</p>
+                            <p class="services__info-text">
+                                После очистки сайта от вирусов - даю вам отчет о проделанной работе, найденных вирусах и
+                                очищенных файлах. Также даю рекомендации по защите сайта.
+                            </p>
+                        </div>
+
+                        <div class="services__bottom">
+                            <a class="services__bottom-btn link" href="#">Обратиться</a>
+                        </div>
+                    </div>
+                    <div id="setting" class="tabcontent">
+                        <div class="services__top">
+                            <h3 class="services__top-title">
+                                НАСТРОЙКА САЙТА
+                            </h3>
+                        </div>
+
+                        <div class="services__info">
+                            <p class="services__info-text">
+                                Выполню обновление до актуальной версии Вашего сайта на CMS MODX Revolution.
+                            </p>
+                            <p class="services__info-text">
+                                Риск взлома сайта: устаревшая версия движка имеет больше уязвимостей, чем пользуются
+                                злоумышленники. В новых релизах разработчики устраняют все слабые места в защите,
+                                указывая новые возможности, которые вы получите.
+                            </p>
+                            <p class="services__info-text">
+                                Большое количество багов на сайте: некоторые ошибки на сайте могут появиться только с
+                                течением времени. Обновление CMS позволяет избавиться от большинства багов.
+                            </p>
+                        </div>
+
+                        <div class="services__bottom">
+                            <a class="services__bottom-btn link" href="#">Обратиться</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
     <section claass="blogs">
@@ -494,24 +729,19 @@
                     <form class="contact__form" action="">
                         <ul class="ks-cboxtags">
                             <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash"><label
-                                    for="checkboxOne">Дизайн сайта</label></li>
+                                    for="checkboxOne">Веб-дизайн</label></li>
                             <li><input type="checkbox" id="checkboxTwo" value="Rainbow Dash"><label
-                                    for="checkboxTwo">QA-тестирование</label></li>
+                                    for="checkboxTwo">Веб-разработка</label></li>
                             <li><input type="checkbox" id="checkboxThree" value="Rainbow Dash"><label
-                                    for="checkboxThree">Доработка сайта</label></li>
+                                    for="checkboxThree">Парсинг сайтов</label></li>
                             <li><input type="checkbox" id="checkboxFour" value="Rainbow Dash"><label
-                                    for="checkboxFour">Верстка</label></li>
+                                    for="checkboxFour">Автоматизация отчетов</label></li>
                             <li><input type="checkbox" id="checkboxEight" value="Rainbow Dash"><label
-                                    for="checkboxEight">Адаптивная разрабокта</label></li>
+                                    for="checkboxEight">Тестирование</label></li>
                             <li><input type="checkbox" id="checkboxNine" value="Rainbow Dash"><label
-                                    for="checkboxNine">Системное Администрирование</label></li>
+                                    for="checkboxNine">Защита и лечение сайтов</label></li>
                             <li><input type="checkbox" id="checkboxFive" value="Rainbow Dash"><label
-                                    for="checkboxFive">Wordpress</label></li>
-                            <li><input type="checkbox" id="checkboxSix" value="Rainbow Dash"><label
-                                    for="checkboxSix">Лендинги</label></li>
-                            <li><input type="checkbox" id="checkboxSeven" value="Rainbow Dash"><label
-                                    for="checkboxSeven">Интернет-магазин</label></li>
-
+                                    for="checkboxFive">настройка сайтов</label></li>
                         </ul>
 
                         <div class="form__info">
@@ -572,9 +802,9 @@
     </script>
 
 
-<script>
-    
-</script>
+    <script>
+
+    </script>
 
 </body>
 
