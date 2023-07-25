@@ -217,6 +217,8 @@ function openCity(evt, cityName) {
 }
 
 
+
+
 // const tl = gsap.timeline()
 
 // tl.fromTo('.home__content-title', {

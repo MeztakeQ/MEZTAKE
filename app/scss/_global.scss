@@ -17,7 +17,15 @@ body{
     color: #fff;
     text-transform: uppercase;
     overflow-x: hidden;
+    cursor: none;
 }
+
+
+
+button {
+    cursor: none;
+}
+
 
  
 h6,
@@ -37,6 +45,7 @@ p{
 
 a{
     text-decoration: none;
+    cursor: none;
 }
 
 li{
@@ -79,23 +88,14 @@ nav{
     border: 1px solid #fff;
   }
   
-  .inner {
-    background: #fff;
-    height: 8px;
-    width: 8px;
-    transition: 250ms ease-out;
-  }
   
   .cursor.hover {
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(2);
     transition: transform 250ms ease-in-out;
-    background: #fff;
+    background: #ffffff67;
   }
   
-  .inner.hover {
-    background: #fff;
-    
-  }
+
 
 
 
@@ -186,7 +186,8 @@ ul.ks-cboxtags li label{
 
 ul.ks-cboxtags li label {
     padding: 8px 12px;
-    cursor: pointer;
+    cursor: none;
+    
 }
 
 
@@ -195,15 +196,20 @@ ul.ks-cboxtags li input[type="checkbox"]:checked + label {
     border: 1px solid #38F8AC;
     color: #38F8AC;
     transition: all .2s;
+    
 }
 
 ul.ks-cboxtags li input[type="checkbox"] {
   display: absolute;
+  cursor: none;
 }
 ul.ks-cboxtags li input[type="checkbox"] {
   position: absolute;
   opacity: 0;
+  cursor: none;
 }
+
+
 
 
 

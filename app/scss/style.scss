@@ -71,7 +71,7 @@
     font-family: 'Xolonium', sans-serif;
     font-weight: 400;
     font-size: 130px;
-    color: #D9D9D9;
+    color: #38F8AC;
 }
 .home__content-slagr {
     text-align: right;
@@ -84,8 +84,15 @@
     width: 600px;
     height: 600px;
     object-fit: cover;
+    border-radius: 10px;
     
-   
+    opacity: .5;
+    -webkit-box-shadow: 1px 1px 0px rgba(0,0,0,0.1);/*For webkit browsers*/
+
+    -moz-box-shadow: 1px 1px 0px rgba(0,0,0,0.1);/*For Firefox*/
+    
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+  
 }
 
 .slag{
@@ -109,7 +116,6 @@
     color: #070615;
     font-family: 'Xolonium-Bold', sans-serif;
     background: #38F8AC;
-    cursor: pointer;
     outline: none;
     border: none;
     transition: .5s;
@@ -258,7 +264,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    transition: .5s;
+   
 }
 .project__item {
     display: inline-block;
@@ -269,12 +275,74 @@
     text-align: center;
     margin-bottom: 24px;
     position: relative;
-    transition: .5s;
-   
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .project__hover{
+       
+        transition: 0.4s;
+        transform: translateY(0px);
+    }
+
 }
 
-.project__info {
+.project__hover{
     position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #171225;
+    transition: 0.4s;
+    transform: translateY(400px);
+    padding: 24px;
+}
+
+.project__main-text {
+    text-align: left;
+    color: #FFF;
+    font-family: Xolonium;
+    font-size: 12px;
+    font-style: normal;
+    display: block;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.project__main-subtext {
+    display: block;
+    margin-top: 10px;
+    color: #FFF;
+    font-family: Xolonium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    color: #38F8AC;
+}
+
+.project__main-link {
+    position: absolute;
+    bottom: 20px;
+    left: 12%;
+    display: block;
+    color: #38F8AC;
+    font-family: Xolonium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+
+.project__info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -447,7 +515,6 @@
     width: 500px;
     margin: 20px 0;
     background-color: transparent;
-    cursor: pointer;
     font-family: 'AkzidGrtskNext-Regular', sans-serif;
     text-transform: uppercase;
     font-size: 20px;
@@ -691,11 +758,12 @@
 
 }
 .contact__content {
-    margin: 50px 0;
-    text-align: center;
+    margin: 50px 0px;
+    
 }
 .contact__content-img{
-    border-radius: 50%;
+    opacity: .5;
+    
     
 }
 .contact__content-link{
