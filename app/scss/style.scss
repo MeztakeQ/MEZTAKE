@@ -208,6 +208,10 @@
     border-left: 2px solid #fff;
     width: 350px;
     min-height: 350px;
+
+    &:first-child{
+        border-left: none;
+    }
 }
 .skills__header {
     border-bottom: 2px solid #fff;
